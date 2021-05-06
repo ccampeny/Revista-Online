@@ -1,0 +1,33 @@
+.main {
+    width: 95%;
+    margin: 0 auto;
+    background-color: $light-gray;
+}
+
+@media (min-width: $min-sm) {      //desde 576px
+    .main {
+       width: 90%;
+       margin: 0 auto;
+    }
+}
+
+@media (min-width: $min-md) {     //desde 768px
+    .main {
+       width: 85%;
+       margin: 0 auto;
+    }
+}
+
+@media (min-width: $min-lg) {      //desde 992px
+    .main {
+       width: 75%;
+       margin: 0 auto;
+    }
+}
+
+@media (min-width: $min-xl) {      //desde 1200px
+    .main {
+       width: 75%;
+       margin: 0 auto;
+    }
+}

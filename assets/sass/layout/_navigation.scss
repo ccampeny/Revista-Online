@@ -1,0 +1,64 @@
+.nav {
+    width: 95%;
+    padding: 0.625em;
+    border-bottom: 1px solid gray;
+    margin: 0 auto;
+    @include respond-to('md') {
+        width: 90%;
+    }
+    @include respond-to('lg') {
+        width: 80%;
+    }
+    .nav__logo {
+        font-size: $large;
+        font-weight: bold;
+        text-transform: uppercase;
+        box-sizing: border-box;
+        padding-top: 0.302em;
+      
+    }
+    .nav__menu {
+        box-sizing: border-box;
+        text-align: right;
+    }
+}
+
+.nav__menu .nav__menu-items .nav__item {
+    display: inline-block;
+    list-style-type: none;
+    box-sizing: border-box;
+    &:first-child {
+        display: none;
+        @include respond-to('md') {
+            display: inline;
+            
+        }
+    }
+    @include respond-to('sm') {
+    padding-left: 0.5em;
+    }
+    .nav__item-input {
+        padding-left: 0.5em;
+    }
+}
+
+.nav__input {
+    width: 47%;
+    @include respond-to('sm') {
+        width: 40%;
+    }
+    @include respond-to('md') {
+        width: 35%;
+    }
+    @include respond-to('lg') {
+        width: 33%;
+    }
+}
+
+.nav__menu .nav__menu-items .nav__item a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: $medium;
+    color: $steel-blue;
+}
+

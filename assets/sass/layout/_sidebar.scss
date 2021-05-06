@@ -1,0 +1,39 @@
+.article__side {
+    box-sizing: border-box;
+    display: none;
+    padding-left: 1.5em;
+    padding-right: 0.4em;
+    padding-top: 0.7em;
+
+    @include respond-to('md') {
+        display: block;    
+    }
+}
+
+.article__side-listado {
+    width: 100%;
+    border-bottom: 1px solid $gray;
+}
+
+.article__side-tags {
+    border-bottom: 1px solid $gray;
+}
+
+.article__side-tags ul {
+    padding: 0;
+    list-style: none;
+}
+
+.article__side-tags ul li {
+    padding: 0.15em 0.3em;
+    background-color: $steel-blue;
+    margin-right: 0.063em;
+    color: $white;
+}
+
+.article__side-destacadas {
+    margin-bottom: 3.125em;
+    img {
+        width: 100%;
+    }
+}
